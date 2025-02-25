@@ -8,4 +8,4 @@
 - [Práctica 2](/Entregas-Practicas/practica-2.md)
 
 ## Prácticas
-- [Curriculum Web](https://tunombre.github.io/entregas-practicas/cv-web/)
+- [Curriculum Web](https://rjddd.github.io/EntregasYPracticas/cv-web/#inicio)
