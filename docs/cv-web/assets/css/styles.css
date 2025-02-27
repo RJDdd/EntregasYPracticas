@@ -22,7 +22,7 @@ body {
 /* 4. Color de letra y fondo para body */
 body {
     color: #333; /* Color de letra */
-    background-color: #f4f4f4; /* Color de fondo */
+    background-color: #a7cad0; /* Color de fondo */
 }
 
 /* 5. Color de letra para enlaces */
@@ -32,7 +32,7 @@ a {
 
 /* 6. Color de letra en estado hover para enlaces */
 a:hover {
-    color: #0056b3; /* Color azul oscuro */
+    color: #7400b3; /* Color azul oscuro */
 }
 
 /* 7. Imágenes responsivas */
@@ -43,7 +43,7 @@ img {
 
 /* 8. Crear 3 variables y aplicarlas */
 :root {
-    --color-primary: #007BFF;
+    --color-primary: #00ffc3;
     --color-secondary: #6c757d;
     --spacing: 20px;
 }
@@ -64,7 +64,7 @@ footer {
 }
 
 #acerca {
-    background-color: #fff;
+    background-color: #fffed8;
     padding: var(--spacing);
 }
 
