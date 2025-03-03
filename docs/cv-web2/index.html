@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Curriculum Web</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Cambia la ruta del favicon si es necesario -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
         <!-- Sección Acerca -->
         <section id="acerca">
             <h2>Acerca de mí</h2>
-            <img src="assets/Foto formal.jpg" alt="Tu foto" width="150"> <!-- Cambia la ruta de la imagen -->
+            <img src="assets/Foto formal.jpg" alt="Foto de Rajid Dokins" class="profile-photo">
             <p>Nací en Brasil, São Paulo, en São Bernado do Campo el 21 de enero de 2001. Me pareció muy interesante el proceso de programar un juego o realizar mods para el mismo. Desde entonces, he deseado aprender a desarrollar videojuegos.</p>
         </section>
 
@@ -50,16 +50,18 @@
         <!-- Sección Proyectos -->
         <section id="proyectos">
             <h2>Proyectos</h2>
-            <article>
-                <h3>La habitación Blanca</h3>
-                <img src="assets/habBla.png" alt="Proyecto 1" width="200"> <!-- Cambia la ruta de la imagen -->
-                <p>Un video juego Web tipo escape room subido a https://rjdld.itch.io/la-habitacion-blanca</p>
-            </article>
-            <article>
-                <h3>Rolling in Ice</h3>
-                <img src="assets/Boton mov.png" alt="Proyecto 2" width="200"> <!-- Cambia la ruta de la imagen -->
-                <p>Un video juego para android que esta proximamente en google play.</p>
-            </article>
+            <div class="project-grid">
+                <article class="card">
+                    <h3>La habitación Blanca</h3>
+                    <img src="assets/habBla.png" alt="La habitación Blanca">
+                    <p>Un videojuego web tipo escape room subido a <a href="https://rjdld.itch.io/la-habitacion-blanca" target="_blank">itch.io</a>.</p>
+                </article>
+                <article class="card">
+                    <h3>Rolling in Ice</h3>
+                    <img src="assets/Boton mov.png" alt="Rolling in Ice">
+                    <p>Un videojuego para Android que está próximamente en Google Play.</p>
+                </article>
+            </div>
         </section>
 
         <!-- Sección Contacto -->
@@ -67,20 +69,11 @@
             <h2>Contacto</h2>
             <p>Puedes contactarme a través de:</p>
             <ul>
-                <li>Email: <a href="cdmx2605@amerike.edu.mx">cdmx2605@amerike.edu.mx</a></li>
+                <li>Email: <a href="mailto:cdmx2605@amerike.edu.mx">cdmx2605@amerike.edu.mx</a></li>
                 <li>Teléfono: +52 1 797 131 6291</li>
-                <li>Itch.io: <a href="https://rjdld.itch.io/">https://rjdld.itch.io/</a></li>
-                <li>GitHub: <a href="https://github.com/RJDdd">https://github.com/RJDdd</a></li>
+                <li>Itch.io: <a href="https://rjdld.itch.io/" target="_blank">https://rjdld.itch.io/</a></li>
+                <li>GitHub: <a href="https://github.com/RJDdd" target="_blank">https://github.com/RJDdd</a></li>
             </ul>
-            <!--<form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>-->
         </section>
     </main>
 

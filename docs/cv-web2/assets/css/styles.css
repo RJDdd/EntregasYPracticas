@@ -1,126 +1,123 @@
-/* 1. Tamaño de letra para html y body */
+/* Estilos generales */
 html {
     font-size: 100%;
 }
 
 body {
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* 2. Box-sizing para todos los elementos */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* 3. Familia de fuente de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* 4. Color de letra y fondo para body */
-body {
-    color: #333; /* Color de letra */
-    background-color: #a7cad0; /* Color de fondo */
-}
-
-/* 5. Color de letra para enlaces */
-a {
-    color: #007BFF; /* Color azul */
-}
-
-/* 6. Color de letra en estado hover para enlaces */
-a:hover {
-    color: #7400b3; /* Color azul oscuro */
-}
-
-/* 7. Imágenes responsivas */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* 8. Crear 3 variables y aplicarlas */
-:root {
-    --color-primary: #00ffc3;
-    --color-secondary: #6c757d;
-    --spacing: 20px;
-}
-
+/* Header */
 header {
-    background-color: var(--color-primary);
-    padding: var(--spacing);
-}
-
-footer {
-    background-color: var(--color-secondary);
-    padding: var(--spacing);
-}
-
-/* 9. Crear 3 selectores de identificador */
-#inicio {
-    margin-top: var(--spacing);
-}
-
-#acerca {
-    background-color: #fffed8;
-    padding: var(--spacing);
-}
-
-#contacto {
-    border-top: 2px solid var(--color-primary);
-}
-
-/* 10. Crear 3 selectores de clases */
-.text-center {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.card {
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main - Contenedor principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna por defecto (móviles) */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Secciones */
+section {
     background-color: #fff;
-    padding: var(--spacing);
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btn {
-    background-color: var(--color-primary);
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* 11. Crear 3 selectores descendientes */
-nav a {
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-article h3 {
-    color: var(--color-primary);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* 12. Crear 3 selectores de grupo */
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-header, footer {
     text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-section, article {
-    margin-bottom: var(--spacing);
+/* Media Queries para diseño responsivo */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para tablets */
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas grandes */
+    }
+
+    #proyectos .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para proyectos */
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas para pantallas muy grandes */
+    }
+}
+
+/* Estilos para tarjetas de proyectos */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
