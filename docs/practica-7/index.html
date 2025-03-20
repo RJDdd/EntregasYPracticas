@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Modelos 3D</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <h1>Tienda de Modelos 3D</h1>
+    <section id="productos">
+        <h2>Productos</h2>
+        <article class="producto" data-id="1" data-nombre="Kohaku - Dr. Stone" data-precio="20">
+            Kohaku - Dr. Stone - $20
+        </article>
+        <article class="producto" data-id="2" data-nombre="Senku - Dr. Stone" data-precio="25">
+            Senku - Dr. Stone - $25
+        </article>
+        <article class="producto" data-id="3" data-nombre="Fushi - To Your Eternity" data-precio="30">
+            Fushi - To Your Eternity - $30
+        </article>
+        <article class="producto" data-id="4" data-nombre="Jotaro Kujo - JoJo's Bizarre Adventure" data-precio="35">
+            Jotaro Kujo - JoJo's Bizarre Adventure - $35
+        </article>
+        <article class="producto" data-id="5" data-nombre="Dio Brando - JoJo's Bizarre Adventure" data-precio="40">
+            Dio Brando - JoJo's Bizarre Adventure - $40
+        </article>
+    </section>
+    <section id="mensaje-compra" class="hidden">
+        <h2>¡Compra realizada con éxito!</h2>
+        <p>Gracias por su compra.</p>
+    </section>
+    <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-carrito">0</span></p>
+        <button id="btn-compra">Comprar</button>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
