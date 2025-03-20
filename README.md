@@ -11,3 +11,4 @@
 - [Curriculum Web 1 y 2](https://rjddd.github.io/EntregasYPracticas/cv-web/#inicio)
 - [Practica 6](https://rjddd.github.io/EntregasYPracticas/practica-6/)
 - [Practica 7](https://rjddd.github.io/EntregasYPracticas/practica-7/)
+- [Practica 8](https://rjddd.github.io/EntregasYPracticas/practica-8/)
