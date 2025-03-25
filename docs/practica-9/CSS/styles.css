@@ -1,0 +1,123 @@
+/* Estilos para la cuadrícula de productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.producto-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.producto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.producto-info {
+  padding: 1rem;
+}
+
+.producto-title {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 2.8em;
+  line-height: 1.4;
+}
+
+.producto-price {
+  font-weight: bold;
+  color: #2c7be5;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto-category {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+
+.btn-agregar {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.btn-agregar:hover {
+  background-color: #357abd;
+}
+
+/* Estilos para el carrito */
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  border-bottom: 1px solid #eee;
+}
+
+.controles-carrito {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controles-carrito button {
+  background: #f0f0f0;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.controles-carrito button:hover {
+  background: #ddd;
+}
+
+/* Estilos para errores */
+.error-api {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-api button {
+  padding: 0.5rem 1rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}

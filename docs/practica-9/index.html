@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online con API</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+</head>
+<body>
+    <h1>Tienda Online</h1>
+    <section id="productos">
+        <h2>Productos</h2>
+        <div id="productos-container" class="productos-grid">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+        </div>
+    </section>
+    <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-carrito">0</span></p>
+        <button id="btn-compra">Comprar</button>
+    </section>
+    <div id="loader" class="hidden">
+        <div class="loader-spinner"></div>
+        <p>Cargando productos...</p>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
