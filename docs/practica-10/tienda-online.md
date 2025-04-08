@@ -1,31 +1,45 @@
-# Tienda Online: [Nombre de tu tienda]
+# Tienda Online: AnimeFig Store
 
 ## Descripción
-[Describe brevemente qué vas a vender en tu tienda online. Ejemplo: "Tienda especializada en venta de productos electrónicos y gadgets tecnológicos".]
+Tienda especializada en la venta de figuras de anime, model kits (como Bandai, Figure-Rise Standard), y merchandising de series populares (One Piece, Digimon, etc.). Ofrecemos productos importados y ediciones limitadas.
+
+---
 
 ## Inventario de Productos
 
-| ID | Nombre | Categoría | Precio | Stock | Descripción |
-|----|--------|-----------|--------|-------|-------------|
-| 001 | Producto 1 | Categoría A | $XX.XX | XX | Descripción breve |
-| 002 | Producto 2 | Categoría B | $XX.XX | XX | Descripción breve |
-| 003 | Producto 3 | Categoría A | $XX.XX | XX | Descripción breve |
+| ID   | Nombre                          | Categoría       | Precio   | Stock | Descripción                                  |
+|------|---------------------------------|-----------------|----------|-------|----------------------------------------------|
+| B001 | Figure-Rise Wargreymon          | Model Kit       | $45.99   | 15    | Model kit Bandai de Digimon, 18cm altura     |
+| OP05 | One Piece Luffy Sun God Nika    | Figura Premium  | $129.99  | 8     | Edición especial con efectos de luz          |
+| B002 | Bandai Hubby Goku               | Figura Colección| $75.50   | 20    | Figura articulada de 25cm                   |
+| D003 | Demon Slayer Nezuko Figma       | Figura Articulada| $89.99  | 12    | Incluye accesorios intercambiables           |
+
+---
 
 ## Moodboard
-![Moodboard de diseño](assets/moodboard-tienda.jpg)
+![Moodboard AnimeFig](assets/moodboard-animefig.png)  
+*Estilo visual: Colores vibrantes (rojo #E63946, azul oscuro #1D3557), tipografía bold para títulos (Bebas Neue), fondos con texturas de manga.*
+
+---
 
 ## Algoritmo de Proceso de Compra
+1. Usuario visita la tienda y explora categorías (Model Kits, Figuras, Merchandising).  
+2. Filtra productos por serie (One Piece, Digimon, etc.) o precio.  
+3. Selecciona producto → ve detalles (fotos 360°, disponibilidad).  
+4. Agrega al carrito (el sistema valida stock).  
+5. **Flujo de checkout**:  
+   - Ver/editar carrito (cambiar cantidades).  
+   - Ingresar datos de envío (con opción "envío express").  
+   - Selección de pago (tarjeta/PayPal, con validación en tiempo real).  
+   - Confirmación → email con tracking y guía de armado (para model kits).  
 
-1. El usuario ingresa a la tienda online
-2. Explora los productos disponibles
-3. Selecciona productos para agregar al carrito
-4. Visualiza el resumen del carrito
-5. Procede al checkout
-6. Completa información de envío y pago
-7. Confirma la compra
-8. Recibe confirmación por correo electrónico
-9. Sistema actualiza inventario
-10. Producto es enviado al cliente
+---
 
 ## Diagrama de Flujo
-![Diagrama de flujo del proceso](assets/diagrama-flujo.png)
+![Diagrama de Flujo AnimeFig](assets/diagrama-flujo-animefig.png)  
+*Procesos clave:*  
+- **Administrador**: Actualizar catálogo/marcar como "preorden".  
+- **Cliente**: Solicitar reembolsos por figuras dañadas.  
+- **Logística**: Integración con agente marítimo para importaciones.  
+
+---
