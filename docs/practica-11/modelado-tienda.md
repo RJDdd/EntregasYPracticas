@@ -17,7 +17,7 @@ Tienda especializada en la venta de figuras de anime, model kits (como Bandai, F
 ---
 
 ## Moodboard
-![Moodboard AnimeFig](assets/moodboard-animefig.png)  
+![Moodboard AnimeFig](/docs/practica-10/assets/moodboard-animefig.png)  
 *Estilo visual: Colores vibrantes (rojo #E63946, azul oscuro #1D3557), tipografía bold para títulos (Bebas Neue), fondos con texturas de manga.*
 
 ---
@@ -36,7 +36,7 @@ Tienda especializada en la venta de figuras de anime, model kits (como Bandai, F
 ---
 
 ## Diagrama de Flujo
-![Diagrama de Flujo AnimeFig](assets/diagrama-flujo-animefig.png)  
+![Diagrama de Flujo AnimeFig](/docs/practica-10/assets/diagrama-flujo-animefig.png)  
 *Procesos clave:*  
 - **Administrador**: Actualizar catálogo/marcar como "preorden".  
 - **Cliente**: Solicitar reembolsos por figuras dañadas.  
