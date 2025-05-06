@@ -108,6 +108,6 @@ Tienda especializada en la venta de figuras de anime, model kits (como Bandai, F
 - Un **pedido** puede tener **un reembolso** (opcional).
 - Un **admin** gestiona la tienda y actualiza los productos.
 
-## 2. Diagrama Relacional en supabase
+## 3. Diagrama Relacional en supabase
 
 ![Diagrama Relacional AnimeFig](/docs/practica-11/assets/SupabaseDiagrama.png)
