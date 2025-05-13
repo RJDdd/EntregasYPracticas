@@ -15,3 +15,4 @@
 - [Practica 9](https://rjddd.github.io/EntregasYPracticas/practica-9/)
 - [Práctica 10 ](/docs/practica-10/tienda-online.md)
 - [Práctica 11 ](/docs/practica-11/modelado-tienda.md)
+[Proyecto final ](https://rjddd.github.io/EntregasYPracticas/anime-fig-shop/#inicio)
