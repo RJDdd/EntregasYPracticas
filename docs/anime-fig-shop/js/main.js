@@ -1,18 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    
-    hamburger.addEventListener('click', function() {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    // Scroll suave para el botón de flecha
+    document.querySelector('.scroll-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 
-    // Responsive adjustments
+    // Menú responsivo (si lo necesitas)
+    const hamburger = document.createElement('div');
+    hamburger.className = 'hamburger mobile-only';
+    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+    document.querySelector('.main-nav .container').prepend(hamburger);
+    
+    hamburger.addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('show');
+    });
+
     function handleResize() {
+        const navLinks = document.querySelector('.nav-links');
         if (window.innerWidth > 768) {
-            navLinks.style.display = 'flex';
-        } else {
-            navLinks.style.display = 'none';
+            navLinks.classList.remove('show');
         }
     }
 

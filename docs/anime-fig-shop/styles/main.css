@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #e63946;
+  background-color: #c44536;
   color: white;
   border: none;
   border-radius: 5px;
@@ -31,53 +31,96 @@ body {
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background-color: #c1121f;
+  background-color: #9c372b;
   transform: translateY(-2px);
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px 0;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.header .navbar {
+.header .top-bar {
+  background-color: #c44536;
+  padding: 15px 0;
+}
+.header .top-bar .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-.header .navbar .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #e63946;
+.header .top-bar .logo-container .logo-img {
+  height: 50px;
+  width: auto;
 }
-.header .navbar .nav-links {
+.header .top-bar .search-bar {
+  display: flex;
+  width: 50%;
+}
+.header .top-bar .search-bar input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+.header .top-bar .search-bar input:focus {
+  outline: none;
+}
+.header .top-bar .search-bar .search-btn {
+  background-color: #9c372b;
+  color: #ffffff;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.header .top-bar .search-bar .search-btn:hover {
+  background-color: #883025;
+}
+.header .main-nav {
+  background-color: #197278;
+}
+.header .main-nav .nav-links {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.header .navbar .nav-links li {
-  margin-left: 30px;
+.header .main-nav .nav-links li {
+  position: relative;
 }
-.header .navbar .nav-links li a {
-  color: white;
+.header .main-nav .nav-links li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
   text-decoration: none;
+  padding: 15px 20px;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: background-color 0.3s;
 }
-.header .navbar .nav-links li a:hover, .header .navbar .nav-links li a.active {
-  color: #e63946;
+.header .main-nav .nav-links li a i {
+  margin-right: 8px;
 }
-.header .navbar .hamburger {
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
+.header .main-nav .nav-links li a:hover, .header .main-nav .nav-links li a.active {
+  background-color: #104a4e;
+}
+.header .main-nav .nav-links li.scroll-down {
+  margin-left: auto;
+}
+.header .main-nav .nav-links li.scroll-down .scroll-btn {
+  padding: 15px;
+  background-color: #0c3639;
+}
+.header .main-nav .nav-links li.scroll-down .scroll-btn:hover {
+  background-color: #072224;
 }
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -97,44 +140,89 @@ body {
 
 .featured-products {
   padding: 80px 0;
+  background-color: #edddd4;
 }
 .featured-products .section-title {
   text-align: center;
   margin-bottom: 50px;
   font-size: 2rem;
-  color: #e63946;
+  color: #772e25;
 }
 .featured-products .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 .featured-products .product-card {
-  background: white;
-  border-radius: 10px;
+  background-color: #283d3b;
+  border: 4px solid #772e25;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
 }
 .featured-products .product-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.featured-products .product-card .product-content {
+  display: flex;
+  height: 100%;
 }
 .featured-products .product-card .product-image {
-  height: 300px;
-  background-size: cover;
+  width: 50%;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #385653;
+  min-height: 200px;
 }
 .featured-products .product-card .product-info {
+  width: 50%;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .featured-products .product-card .product-info h3 {
-  color: #1d3557;
-  margin-bottom: 10px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
 }
 .featured-products .product-card .product-info p {
-  color: #333;
-  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.featured-products .product-card .product-info .view-more {
+  background-color: #aed9e0;
+  color: #285e67;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+.featured-products .product-card .product-info .view-more:hover {
+  background-color: #89c8d2;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .featured-products .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .featured-products .product-card .product-content {
+    flex-direction: column;
+  }
+  .featured-products .product-card .product-image,
+  .featured-products .product-card .product-info {
+    width: 100%;
+  }
+  .featured-products .product-card .product-image {
+    height: 250px;
+  }
 }
 
 .footer {
@@ -152,15 +240,13 @@ body {
   .header .navbar .hamburger {
     display: block;
   }
-
   .hero h1 {
     font-size: 2rem;
   }
   .hero p {
     font-size: 1rem;
   }
-
   .product-grid {
     grid-template-columns: 1fr !important;
   }
-}
+}/*# sourceMappingURL=main.css.map */
